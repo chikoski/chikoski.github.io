@@ -1,0 +1,28 @@
+{
+  "name": "chikoski.github.io",
+  "version": "0.1.0",
+  "description": "chikoski@ web site",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server -p 8080 -c-1 ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chikoski/chikoski.github.io.git"
+  },
+  "keywords": [
+    "AMP"
+  ],
+  "author": "chikoski@",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chikoski/chikoski.github.io/issues"
+  },
+  "homepage": "https://github.com/chikoski/chikoski.github.io#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "dependencies": {
+    "@material/textfield": "^1.1.0"
+  }
+}
