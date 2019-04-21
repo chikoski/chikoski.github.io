@@ -5,8 +5,7 @@
   <meta charset="utf-8">
   <title>chikoski@</title>
   <link rel="canonical" href="https://chikoski.dev/">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <style amp-boilerplate>
     body {
@@ -77,90 +76,80 @@
   </noscript>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
-  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
-  <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
-  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-
   <style amp-custom>
-    body {
-      width: 100vw;
-      height: 100vh;
+    body,
+    html {
       margin: 0;
       padding: 0;
-      font-size: 1rem;
-      font-family: 'Lato', sans-serif;
-      color: #333;
-    }
-
-    article {
-      padding: 4rem;
+      color: #eee;
+      background-color: #000;
+      position: relative;
+      background-image: url("/assets/art-blooming-blossom-1855272.jpg");
+      background-position: center;
+      background-size: cover;
     }
 
     section {
+      margin: 0;
       box-sizing: border-box;
       height: 100vh;
       position: relative;
     }
 
-    section>div {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateY(-50%) translateX(-50%);
-      box-sizing: border-box;
-      width: 100%;
-      padding: 2rem 4rem;
+    h1 {
+      font-size: 3rem;
+      font-weight: lighter;
+      text-align: center;
+      margin: 0;
+      letter-spacing: -.1rem;
     }
 
-    h1 {
-      font-family: 'IBM Plex Sans', sans-serif;
-      font-size: 2.2rem;
+    a {
+      color: #ddd;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
       text-align: center;
     }
 
-    h2 {
-      font-family: 'IBM Plex Sans', sans-serif;
-      font-size: 1.4rem;
-      margin-top: 2rem;
+    li {
+      display: inline-block;
     }
 
-    h2::after {
-      content: "";
-      display: block;
-      height: 2px;
-      width: 2.5rem;
-      margin-top: 1.4rem;
-      margin-bottom: .5rem;
-      background: #4a4a4a;
+    .container {
+      padding: 1.5rem 4rem;
+      background-color: #9993;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media screen and (max-width: 450px) {
+      h1 {
+        font-size: 2.4rem;
+      }
+
+      .container {
+        background-color: #666c;
+      }
     }
   </style>
 </head>
 
 <body>
-  <amp-carousel class="carousel-component" height="100vh" layout="fixed-height" type="slides">
-    <section>
-      <div>
-        <h1>chikoski@</h1>
-        <p>A tech-savvy person in Tokyo. Tech community organizer.</p>
-
-        <amp-list layout="fixed-height" height="3rem" src="./assets/accounts.json">
-          <template type="amp-mustache">
-            <a href="{{URL}}">{{name}}</a>
-          </template>
-        </amp-list>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h2>Communities</h2>
-        <ul>
-          <li>We are JavaScripters!</li>
-          <li>Emscripten &amp; WebAssembly night!!</li>
-          <li>Rust JP</li>
-        </ul>
-      </div>
-    </section>
-  </amp-carousel>
+  <section>
+    <div class="container">
+      <h1>chikoski@</h1>
+      <p>A techsavy person. Community organizer in Tokyo.</p>
+      <ul>
+        <li><a href="https://twitter.com/chikoski">Twitter</a></li>
+        <li><a href="https://github.com/chikoski">GitHub</a></li>
+      </ul>
+    </div>
+  </section>
 </body>
 
 </html>

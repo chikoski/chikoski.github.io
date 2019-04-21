@@ -4,7 +4,7 @@
   "description": "chikoski@ web site",
   "main": "index.js",
   "scripts": {
-    "serve": "http-server -p 8080 -c-1 ."
+    "serve": "http-server -a 127.0.0.1 -c-1 ."
   },
   "repository": {
     "type": "git",
