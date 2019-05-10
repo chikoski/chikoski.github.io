@@ -4,7 +4,7 @@
   "description": "chikoski@ web site",
   "main": "index.js",
   "scripts": {
-    "serve": "http-server -a 127.0.0.1 -c-1 ."
+    "serve": "node node_modules/amp-dev-serve/dist/index.js ."
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/chikoski/chikoski.github.io#readme",
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "amp-dev-serve": "github:chikoski/amp-dev-serve"
   },
   "dependencies": {
     "@material/textfield": "^1.1.0"
